@@ -1,0 +1,7 @@
+services:
+  memcached:
+    image: memcached:1.6-alpine
+    container_name: goDev-memcached
+    command: ["-m", "1000"]
+    ports:
+      - "11211:11211"
